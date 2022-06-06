@@ -1,0 +1,113 @@
+body{
+  background: rgb(217,224,219);
+  background: radial-gradient(circle, rgba(217,224,219,1) 0%, rgba(0,75,77,1) 100%);
+}
+
+h1,h2,h3,p,label,input,button{
+  font-family: 'Exo 2', sans-serif;
+}
+
+main{
+  margin: 0 auto;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  position: fixed;
+
+  
+}
+
+section{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    color: white;
+    width: 70%;
+    min-width: 350px;
+    border-radius: 20px;
+    padding-bottom: 3em;
+    box-shadow: -3px 7px 15px #00000054;
+}
+
+label{
+  color: black;
+}
+
+input{
+  width: 50%;
+  margin-top:0.3em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  padding: 1em;
+  border: 0px;
+}
+
+button{
+  color: #4c4c4c;
+  background: #b5c7c3;
+  border: 0px;
+  box-shadow: 1px 2px 6px #0000007a;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover{
+  background: #cfdbd8;
+}
+
+section span {
+  margin-top:0.5em
+}
+
+h1{
+  color: white;
+  font-size: 3rem;
+}
+
+/* Todo area */
+
+#check-todos-ctn{
+  width:70%;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 13vh;
+  position: absolute;
+}
+
+.todo-ctn{
+  width: 50%;
+    margin: 1em 0;
+    padding: 0em 3em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #4f8181;
+    border-radius: 20px;
+    color: white;
+    box-shadow: -3px 7px 15px #00000054;
+    text-align: center;
+    transition: background-color 1s ease;
+    position: relative;
+}
+
+.todo-ctn span {
+  color:red;
+  display: block;
+}
+
+.todo-ctn button{
+  margin-top: 1em;
+}
+
+#close-icon{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+}
